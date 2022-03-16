@@ -1,4 +1,7 @@
 # So You Want to Run CleanSumStats
+This repository is mostly written in github flavored markdown and can be viewed in any text editor, but in order to be properly viewed, it should be opened as a vault in the app [Obsidian](https://obsidian.md); where it can be navigated like a wiki.
+
+The double brackets: [[example]] specify a link to another file located within the repository.
 
 ##  [[00 CSS cheat sheet]]
 - put quick reference for css thing here
