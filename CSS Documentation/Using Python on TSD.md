@@ -14,10 +14,10 @@ module load  Python/3.7.4-GCCcore-8.3.0 (This command is for VM ware Horizon use
 
 
 # clean install jupyter in a new environment
-`python3 -m venv /cluster/projects/p33/users/<user>/py3`      
+`python3 -m venv /cluster/projects/p697/users/<user>/py3`      
 - update `<user> `with your TSD username
 
-`source /cluster/projects/p33/users/<user>/py3/bin/activate`  
+`source /cluster/projects/p697/users/<user>/py3/bin/activate`  
 - best to have this on /cluster
 
 ```

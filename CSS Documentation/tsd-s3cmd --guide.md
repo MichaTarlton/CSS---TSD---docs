@@ -1,5 +1,6 @@
 # tsd-s3cmd --guide
-
+Taken from the command `tsd-s3cmd --guide`
+```
 tsd-s3cmd  
 ~~~~~~~~~  
   
@@ -92,3 +93,4 @@ Using the s3 API
        tsd-s3cmd --s3cmd-help  
   
    Or browse http://s3tools.org/s3cmd
+```
