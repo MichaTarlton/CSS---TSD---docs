@@ -1,0 +1,9 @@
+import yaml
+
+with open('*.cleansumstats_meta', 'r') as f:
+    meta = yaml.safe_load(f)
+
+## To access `branch1 text` you would use:
+
+txt = meta["path_sumStats"]
+print(txt)
