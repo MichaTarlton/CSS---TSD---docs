@@ -1,0 +1,9 @@
+Common File Directories
+
+/cluster/projects/p697/projects/
+
+
+/tsd/p697/home/p697-michaejt/p697code
+
+
+/tsd/p697/data/durable/users/p697-michaejt

@@ -1,0 +1,64 @@
+Starting job 13664612 on c1-6 at Wed Feb 23 12:15:32 CET 2022
+
+85
+PGC_ASD_2017_CEU
+/cluster/projects/p697/projects/SUMSTATv2_RAW/PGC_ASD_2017/PGC_ASD_2017_CEU.cleansumstats_meta
+PGC_ASD_2017_CEU
+mkdir: cannot create directory ‘/cluster/projects/p697/users/michaejt/SUMSTATv2_dev/cleansumstats/PGC_ASD_2017_CEU’: File exists
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+singularity/3.7.1:
+   This is a custom module. You can use "module spider <software>" to search
+   for more recent Easybuild modules (those listed under
+   /cluster/software/MODULEFILES/easybuild/all). If no recent Easybuild
+   module is available, you can request it to be installed:
+   https://nettskjema.no/a/usit-sw-request#/page/1
+
+-------------------------------------------------------------------------------
+
+N E X T F L O W  ~  version 21.12.1-edge
+Launching `/cleansumstats/main.nf` [gloomy_easley] - revision: ef09f3f0cb
+----------------------------------------------------
+                                        ,--./,-.
+                                        `._,._,'
+ cleansumstats v1.3.0
+----------------------------------------------------
+
+Run Name          : gloomy_easley
+Input             : /cleansumstats/input/PGC_ASD_2017_CEU.cleansumstats_meta
+Max Resources     : 400 GB memory, 60 cpus, 4h time per job
+Output dir        : /cleansumstats/outdir
+Launch dir        : /cleansumstats/tmp/fake-home
+Working dir       : /cleansumstats/work
+Script dir        : /cleansumstats
+User              : p697-michaejt
+Config Profile    : standard
+----------------------------------------------------
+Reading metadata files
+Postprocess metadata
+Failed to read/validate metadata file /cleansumstats/input/PGC_ASD_2017_CEU.cleansumstats_meta: Column 'or' (from metadata field 'col_OR') did not exist in sumstat file header: [1, 729679, rs4951859, C, G, 1.05, 0.97, 1.14, .0504, .0422, .2323, .17, .621, 13574, --+-+++-++++-+]
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+13664563_85     SUMSTAT         16                                             00:00:14      1:0 
+13664563_85+      batch         16        1   00:00:36          0   00:00:36   00:00:14      1:0 
+13664563_85+     extern         16        1   00:00:00          0   00:00:00   00:00:14      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+13664563_85                                                                      
+13664563_85+          0          0          0        0              0          0 
+13664563_85+          0          0          0        0              0          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+13664563_85                                                                                           
+13664563_85+            0               0              0            0                0              0 
+13664563_85+        0.00M               0          0.00M            0                0              0 
+
+Job 13664612 completed at Wed Feb 23 12:15:45 CET 2022

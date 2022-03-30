@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --job-name=SUMSTAT
+#SBATCH --account=p697_norment
+#SBATCH --time=4:00:00
+#SBATCH --ntasks=1
+#SBATCH --mem-per-cpu=8000M
+#SBATCH --cpus-per-task=16
+#SBATCH --array=43,44,45
+
+## Purpose of var 2 is to run the the following 43,44,45
+## these are all of the MAGIC_GLYCEMIC bunch 
+## Using the modified .cleansumstats_meta files found in my sandbox SUMSTATv2_RAW folder
+## So using RAW=/cluster/projects/p697/users/michaejt/SUMSTATv2_RAW
+
+NUM=$SLURM_ARRAY_TASK_ID
+echo ${NUM}
+
+
+export CLEANSUMSTATS=/cluster/projects/p697/projects/cleansumstats
+export RAW=/cluster/projects/p697/users/michaejt/SUMSTATv2_RAW
+
+export OUT=/cluster/projects/p697/users/michaejt/SUMSTATv3_OUT
+export LIST=/cluster/projects/p697/users/michaejt/lists/uncleanedlist.txt
+
+export uncleanedlist=$(sed "${NUM}q;d" ${LIST})
+echo ${uncleanedlist}
+
+
+cd ${OUT}/${uncleanedlist}/ && paste <(zcat cleaned_GRCh37.gz) <(cut -f 5- <(zcat cleaned_GRCh38.gz) ) | gzip > cleaned_GRCh37.sumstats.gz

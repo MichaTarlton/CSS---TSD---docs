@@ -1,0 +1,64 @@
+Starting job 13664588 on c2-5 at Wed Feb 23 12:15:07 CET 2022
+
+60
+MAGIC_GLYCEMIC_2021_2hGlu_EAS
+/cluster/projects/p697/projects/SUMSTATv2_RAW/MAGIC_GLYCEMIC_2021/MAGIC_GLYCEMIC_2021_2hGlu_EAS.cleansumstats_meta
+MAGIC_GLYCEMIC_2021_2hGlu_EAS
+mkdir: cannot create directory ‘/cluster/projects/p697/users/michaejt/SUMSTATv2_dev/cleansumstats/MAGIC_GLYCEMIC_2021_2hGlu_EAS’: File exists
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+singularity/3.7.1:
+   This is a custom module. You can use "module spider <software>" to search
+   for more recent Easybuild modules (those listed under
+   /cluster/software/MODULEFILES/easybuild/all). If no recent Easybuild
+   module is available, you can request it to be installed:
+   https://nettskjema.no/a/usit-sw-request#/page/1
+
+-------------------------------------------------------------------------------
+
+N E X T F L O W  ~  version 21.12.1-edge
+Launching `/cleansumstats/main.nf` [tiny_panini] - revision: ef09f3f0cb
+----------------------------------------------------
+                                        ,--./,-.
+                                        `._,._,'
+ cleansumstats v1.3.0
+----------------------------------------------------
+
+Run Name          : tiny_panini
+Input             : /cleansumstats/input/MAGIC_GLYCEMIC_2021_2hGlu_EAS.cleansumstats_meta
+Max Resources     : 400 GB memory, 60 cpus, 4h time per job
+Output dir        : /cleansumstats/outdir
+Launch dir        : /cleansumstats/tmp/fake-home
+Working dir       : /cleansumstats/work
+Script dir        : /cleansumstats
+User              : p697-michaejt
+Config Profile    : standard
+----------------------------------------------------
+Reading metadata files
+Failed to read/validate metadata file /cleansumstats/input/MAGIC_GLYCEMIC_2021_2hGlu_EAS.cleansumstats_meta: - $.stats_TotalN: number found, integer expected
+
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+13664563_60     SUMSTAT         16                                             00:00:24      1:0 
+13664563_60+      batch         16        1   00:00:14          0   00:00:14   00:00:24      1:0 
+13664563_60+     extern         16        1   00:00:00          0   00:00:00   00:00:24      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+13664563_60                                                                      
+13664563_60+          0          0          0        0              0          0 
+13664563_60+          0          0          0        0              0          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+13664563_60                                                                                           
+13664563_60+            0               0              0            0                0              0 
+13664563_60+        0.00M               0          0.00M            0                0              0 
+
+Job 13664588 completed at Wed Feb 23 12:15:26 CET 2022

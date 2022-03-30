@@ -1,0 +1,64 @@
+Starting job 13664567 on c1-6 at Wed Feb 23 12:15:08 CET 2022
+
+37
+COGS_PROSTATE_2013
+/cluster/projects/p697/projects/SUMSTATv2_RAW/COGS_PROSTATE_2013/COGS_PROSTATE_2013.cleansumstats_meta
+COGS_PROSTATE_2013
+mkdir: cannot create directory ‘/cluster/projects/p697/users/michaejt/SUMSTATv2_dev/cleansumstats/COGS_PROSTATE_2013’: File exists
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+singularity/3.7.1:
+   This is a custom module. You can use "module spider <software>" to search
+   for more recent Easybuild modules (those listed under
+   /cluster/software/MODULEFILES/easybuild/all). If no recent Easybuild
+   module is available, you can request it to be installed:
+   https://nettskjema.no/a/usit-sw-request#/page/1
+
+-------------------------------------------------------------------------------
+
+N E X T F L O W  ~  version 21.12.1-edge
+Launching `/cleansumstats/main.nf` [angry_heisenberg] - revision: ef09f3f0cb
+----------------------------------------------------
+                                        ,--./,-.
+                                        `._,._,'
+ cleansumstats v1.3.0
+----------------------------------------------------
+
+Run Name          : angry_heisenberg
+Input             : /cleansumstats/input/COGS_PROSTATE_2013.cleansumstats_meta
+Max Resources     : 400 GB memory, 60 cpus, 4h time per job
+Output dir        : /cleansumstats/outdir
+Launch dir        : /cleansumstats/tmp/fake-home
+Working dir       : /cleansumstats/work
+Script dir        : /cleansumstats
+User              : p697-michaejt
+Config Profile    : standard
+----------------------------------------------------
+Reading metadata files
+Postprocess metadata
+Failed to read/validate metadata file /cleansumstats/input/COGS_PROSTATE_2013.cleansumstats_meta: Column 'P_1df_A2' (from metadata field 'col_P') did not exist in sumstat file header: [SNP,Chrom,build36position,build37position,build36strand,build37strand,A1,A2,freqA2_co,freqA2_ca,A1A1_co,A1A2_co,A2A2_co,A1A1_ca,A1A2_ca,A2A2_ca,beta_A2,se_A2,score_A2,var_A2,chi2_1df_A2,P_1df_A2,P_1df_corrected_A2,chi2_1df_corrected_A2,ClusterPlot_check,amended]
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+13664563_37     SUMSTAT         16                                             00:00:27      1:0 
+13664563_37+      batch         16        1   00:00:36          0   00:00:36   00:00:27      1:0 
+13664563_37+     extern         16        1   00:00:00          0   00:00:00   00:00:27      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+13664563_37                                                                      
+13664563_37+          0          0          0        0              0          0 
+13664563_37+          0          0          0        0              0          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+13664563_37                                                                                           
+13664563_37+            0               0              0            0                0              0 
+13664563_37+        0.00M               0          0.00M            0                0              0 
+
+Job 13664567 completed at Wed Feb 23 12:15:28 CET 2022

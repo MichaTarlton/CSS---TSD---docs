@@ -1,0 +1,3231 @@
+44
+GIANT_HEIGHT_2010
+/cluster/projects/p697/users/michaejt/SUMSTATv2_RAW/GIANT_HEIGHT_2010/GIANT_HEIGHT_2010.cleansumstats_meta
+/cluster/work/jobs/14003981/fly
+/cluster/projects/p697/users/michaejt/SUMSTATv2_RAW/GIANT_HEIGHT_2010
+GIANT_HEIGHT_2010.cleansumstats_meta
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /net/tsd-evs.tsd.usit.no/p697/home/p697-michaejt/.local/lib/python3.9/site-packages (1.4.0)
+Requirement already satisfied: pytz>=2020.1 in /gpfs/colossus01/software/EASYBUILD/Python/3.9.5-GCCcore-10.3.0/lib/python3.9/site-packages (from pandas) (2021.1)
+Requirement already satisfied: numpy>=1.18.5 in /net/tsd-evs.tsd.usit.no/p697/home/p697-michaejt/.local/lib/python3.9/site-packages (from pandas) (1.22.1)
+Requirement already satisfied: python-dateutil>=2.8.1 in /gpfs/colossus01/software/EASYBUILD/Python/3.9.5-GCCcore-10.3.0/lib/python3.9/site-packages (from pandas) (2.8.1)
+Requirement already satisfied: six>=1.5 in /gpfs/colossus01/software/EASYBUILD/Python/3.9.5-GCCcore-10.3.0/lib/python3.9/site-packages (from python-dateutil>=2.8.1->pandas) (1.16.0)
+WARNING: You are using pip version 21.1.1; however, version 21.3.1 is available.
+You should consider upgrading via the '/cluster/software/EASYBUILD/Python/3.9.5-GCCcore-10.3.0/bin/python3.9 -m pip install --upgrade pip' command.
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pyyaml in /net/tsd-evs.tsd.usit.no/p697/home/p697-michaejt/.local/lib/python3.9/site-packages (6.0)
+WARNING: You are using pip version 21.1.1; however, version 21.3.1 is available.
+You should consider upgrading via the '/cluster/software/EASYBUILD/Python/3.9.5-GCCcore-10.3.0/bin/python3.9 -m pip install --upgrade pip' command.
+GIANT_HEIGHT_LangoAllen2010_publicrelease_HapMapCeuFreq.txt.gz
+/cluster/projects/p697/users/michaejt/SUMSTATv2_RAW/GIANT_HEIGHT_2010/GIANT_HEIGHT_LangoAllen2010_publicrelease_HapMapCeuFreq.txt.gz
+/cluster/work/jobs/14003981/fly/GIANT_HEIGHT_LangoAllen2010_publicrelease_HapMapCeuFreq.txt.gz
+done!
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+singularity/3.7.1:
+   This is a custom module. You can use "module spider <software>" to search
+   for more recent Easybuild modules (those listed under
+   /cluster/software/MODULEFILES/easybuild/all). If no recent Easybuild
+   module is available, you can request it to be installed:
+   https://nettskjema.no/a/usit-sw-request#/page/1
+
+-------------------------------------------------------------------------------
+
+N E X T F L O W  ~  version 21.12.1-edge
+Launching `/cleansumstats/main.nf` [pensive_shirley] - revision: ef09f3f0cb
+----------------------------------------------------
+                                        ,--./,-.
+                                        `._,._,'
+ cleansumstats v1.3.0
+----------------------------------------------------
+
+Run Name          : pensive_shirley
+Input             : /cleansumstats/input/GIANT_HEIGHT_2010.cleansumstats_meta
+Max Resources     : 400 GB memory, 60 cpus, 4h time per job
+Output dir        : /cleansumstats/outdir
+Launch dir        : /cleansumstats/tmp/fake-home
+Working dir       : /cleansumstats/work
+Script dir        : /cleansumstats
+User              : p697-michaejt
+Config Profile    : standard
+----------------------------------------------------
+Reading metadata files
+Postprocess metadata
+Successfully read/validated metadata file '/cleansumstats/input/GIANT_HEIGHT_2010.cleansumstats_meta'
+All metadata files read
+Validating pipeline parameters
+All pipeline parameters validated
+[-        ] process > calculate_checksum_on_metaf... -
+[-        ] process > calculate_checksum_on_sumst... -
+[-        ] process > make_metafile_unix_friendly    -
+[-        ] process > check_sumstat_format           -
+[-        ] process > add_sorted_rowindex_to_sumstat -
+[-        ] process > map_to_dbsnp:prepare_dbsnp_... -
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:is_chrpos_diff... -
+[-        ] process > map_to_dbsnp:reformat_chrom... -
+[-        ] process > map_to_dbsnp:detect_genome_... -
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+
+[-        ] process > calculate_checksum_on_metaf... -
+[-        ] process > calculate_checksum_on_sumst... -
+[-        ] process > make_metafile_unix_friendly    -
+[-        ] process > check_sumstat_format           -
+[-        ] process > add_sorted_rowindex_to_sumstat -
+[-        ] process > map_to_dbsnp:prepare_dbsnp_... -
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:is_chrpos_diff... -
+[-        ] process > map_to_dbsnp:reformat_chrom... -
+[-        ] process > map_to_dbsnp:detect_genome_... -
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[-        ] process > update_stats:numeric_filter... -
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+
+[-        ] process > calculate_checksum_on_metaf... -
+[-        ] process > calculate_checksum_on_sumst... -
+[-        ] process > make_metafile_unix_friendly    -
+[-        ] process > check_sumstat_format           -
+[-        ] process > add_sorted_rowindex_to_sumstat -
+[-        ] process > map_to_dbsnp:prepare_dbsnp_... -
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:is_chrpos_diff... -
+[-        ] process > map_to_dbsnp:reformat_chrom... -
+[-        ] process > map_to_dbsnp:detect_genome_... -
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[-        ] process > update_stats:numeric_filter... -
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+[-        ] process > calculate_checksum_on_metaf... [  0%] 0 of 1
+[06/0e3d94] process > calculate_checksum_on_sumst... [  0%] 0 of 1
+[-        ] process > make_metafile_unix_friendly    [  0%] 0 of 1
+[-        ] process > check_sumstat_format           [  0%] 0 of 1
+[-        ] process > add_sorted_rowindex_to_sumstat -
+[-        ] process > map_to_dbsnp:prepare_dbsnp_... -
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:is_chrpos_diff... -
+[-        ] process > map_to_dbsnp:reformat_chrom... -
+[-        ] process > map_to_dbsnp:detect_genome_... -
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[-        ] process > update_stats:numeric_filter... -
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (4)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [  0%] 0 of 1
+[1b/96e8a6] process > make_metafile_unix_friendly... [  0%] 0 of 1
+[53/775085] process > check_sumstat_format (1)       [  0%] 0 of 1
+[-        ] process > add_sorted_rowindex_to_sumstat -
+[-        ] process > map_to_dbsnp:prepare_dbsnp_... -
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:is_chrpos_diff... -
+[-        ] process > map_to_dbsnp:reformat_chrom... -
+[-        ] process > map_to_dbsnp:detect_genome_... -
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[-        ] process > update_stats:numeric_filter... -
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (4)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [  0%] 0 of 1
+[-        ] process > add_sorted_rowindex_to_sumstat -
+[-        ] process > map_to_dbsnp:prepare_dbsnp_... -
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:is_chrpos_diff... -
+[-        ] process > map_to_dbsnp:reformat_chrom... -
+[-        ] process > map_to_dbsnp:detect_genome_... -
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[-        ] process > update_stats:numeric_filter... -
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (5)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:prepare_dbsnp_... -
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:is_chrpos_diff... -
+[-        ] process > map_to_dbsnp:reformat_chrom... -
+[-        ] process > map_to_dbsnp:detect_genome_... -
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[-        ] process > update_stats:numeric_filter... -
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (8)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[bf/e4adf2] process > map_to_dbsnp:reformat_chrom... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:detect_genome_... -
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [  0%] 0 of 1
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (9)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[bf/e4adf2] process > map_to_dbsnp:reformat_chrom... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:detect_genome_... -
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [  0%] 0 of 1
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (9)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[bf/e4adf2] process > map_to_dbsnp:reformat_chrom... [100%] 1 of 1
+[5c/4321b7] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 4
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [  0%] 0 of 1
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (13)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[bf/e4adf2] process > map_to_dbsnp:reformat_chrom... [100%] 1 of 1
+[46/54f61e] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 4
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [  0%] 0 of 1
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (13)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[-        ] process > map_to_dbsnp:remove_duplica... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[bf/e4adf2] process > map_to_dbsnp:reformat_chrom... [ 50%] 1 of 2
+[46/54f61e] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 4
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [  0%] 0 of 1
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (14)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[-        ] process > map_to_dbsnp:remove_duplica... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [ 50%] 1 of 2
+[46/54f61e] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 4
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [  0%] 0 of 1
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (15)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [ 50%] 1 of 2
+[46/54f61e] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 4
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [  0%] 0 of 1
+[-        ] process > update_stats:convert_neglogP   -
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (16)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [ 50%] 1 of 2
+[46/54f61e] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 4
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [  0%] 0 of 1
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (18)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/3c4899] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [  0%] 0 of 1
+[-        ] process > update_stats:force_eaf         -
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (21)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [  0%] 0 of 1
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (21)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [  0%] 0 of 1
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (21)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (22)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [  0%] 0 of 1
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (22)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [  0%] 0 of 1
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [  0%] 0 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (22)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [  0%] 0 of 1
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[5c/4321b7] process > map_to_dbsnp:detect_genome_... [ 12%] 1 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (22)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [  0%] 0 of 1
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[80/984d80] process > map_to_dbsnp:detect_genome_... [ 25%] 2 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (22)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[80/984d80] process > map_to_dbsnp:detect_genome_... [ 25%] 2 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (22)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[95/a1e7ed] process > map_to_dbsnp:detect_genome_... [ 37%] 3 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (22)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[31/9195b8] process > map_to_dbsnp:detect_genome_... [ 50%] 4 of 8
+[-        ] process > map_to_dbsnp:decide_genome_... -
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (23)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[31/9195b8] process > map_to_dbsnp:detect_genome_... [ 50%] 4 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (23)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [ 75%] 6 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (23)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [ 75%] 6 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [100%] 1 of 1
+[-        ] process > map_to_dbsnp:build_warning     -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (23)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [ 75%] 6 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [100%] 1 of 1
+[-        ] process > map_to_dbsnp:build_warning     [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (24)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [ 75%] 6 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [100%] 1 of 1
+[-        ] process > map_to_dbsnp:build_warning     [  0%] 0 of 1
+[f5/73701b] process > map_to_dbsnp:rm_dup_chrpos_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (25)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [ 75%] 6 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [100%] 1 of 1
+[51/37469a] process > map_to_dbsnp:build_warning (1) [  0%] 0 of 1
+[f5/73701b] process > map_to_dbsnp:rm_dup_chrpos_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (25)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [ 75%] 6 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [100%] 1 of 1
+[51/37469a] process > map_to_dbsnp:build_warning (1) [  0%] 0 of 1
+[f5/73701b] process > map_to_dbsnp:rm_dup_chrpos_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (25)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [ 75%] 6 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [100%] 1 of 1
+[51/37469a] process > map_to_dbsnp:build_warning (1) [100%] 1 of 1
+[f5/73701b] process > map_to_dbsnp:rm_dup_chrpos_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (25)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [ 75%] 6 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [100%] 1 of 1
+[51/37469a] process > map_to_dbsnp:build_warning (1) [100%] 1 of 1
+[f5/73701b] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1
+[-        ] process > map_to_dbsnp:maplift_dbsnp_... -
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (26)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[f7/02520a] process > map_to_dbsnp:detect_genome_... [ 75%] 6 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [100%] 1 of 1
+[51/37469a] process > map_to_dbsnp:build_warning (1) [100%] 1 of 1
+[f5/73701b] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1
+[41/9f5945] process > map_to_dbsnp:maplift_dbsnp_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (26)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/3c4899] process > map_to_dbsnp:detect_genome_... [ 87%] 7 of 8
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [100%] 1 of 1
+[51/37469a] process > map_to_dbsnp:build_warning (1) [100%] 1 of 1
+[f5/73701b] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1
+[41/9f5945] process > map_to_dbsnp:maplift_dbsnp_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (26)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[e9/3adfdc] process > map_to_dbsnp:decide_genome_... [100%] 1 of 1
+[51/37469a] process > map_to_dbsnp:build_warning (1) [100%] 1 of 1
+[f5/73701b] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1
+[41/9f5945] process > map_to_dbsnp:maplift_dbsnp_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (27)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [ 50%] 1 of 2
+[51/37469a] process > map_to_dbsnp:build_warning (1) [100%] 1 of 1
+[f5/73701b] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1
+[41/9f5945] process > map_to_dbsnp:maplift_dbsnp_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (29)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [ 50%] 1 of 2
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [ 50%] 1 of 2
+[41/9f5945] process > map_to_dbsnp:maplift_dbsnp_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (30)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [  0%] 0 of 2
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (30)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[41/9f5945] process > map_to_dbsnp:maplift_dbsnp_... [ 50%] 1 of 2
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (30)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[-        ] process > map_to_dbsnp:select_chrpos_... -
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (31)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:rm_dup_chrpos_... -
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (32)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (32)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:reformat_sumstat  -
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (33)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (33)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [  0%] 0 of 1
+[-        ] process > map_to_dbsnp:split_multiall... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (34)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [  0%] 0 of 1
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (34)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [  0%] 0 of 1
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (35)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [  0%] 0 of 1
+[-        ] process > allele_correction:allele_co... -
+[-        ] process > allele_correction:rm_dup_ch... -
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[-        ] process > organize_output:collect_rmd... -
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (37)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [  0%] 0 of 1
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[-        ] process > update_stats:prep_af_stats     -
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [  0%] 0 of 1
+[-        ] process > organize_output:desc_rmd_li... -
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (39)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [  0%] 0 of 1
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [  0%] 0 of 1
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (39)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [  0%] 0 of 1
+[-        ] process > update_stats:add_af_stats      -
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (40)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [  0%] 0 of 1
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (40)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [  0%] 0 of 1
+[-        ] process > update_stats:infer_stats       -
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (42)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[04/bd2d37] process > update_stats:infer_stats (2)   [  0%] 0 of 2
+[-        ] process > update_stats:merge_inferred... -
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (43)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [  0%] 0 of 1
+[-        ] process > update_stats:select_stats_f... -
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (44)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [  0%] 0 of 1
+[-        ] process > organize_output:final_assembly -
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (44)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [  0%] 0 of 1
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (45)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [  0%] 0 of 1
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (45)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[-        ] process > organize_output:prep_GRCh37... -
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (46)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [  0%] 0 of 1
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[-        ] process > organize_output:collect_and... -
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (47)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [  0%] 0 of 1
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[f6/cd8473] process > organize_output:collect_and... [  0%] 0 of 1
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (47)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [  0%] 0 of 1
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[f6/cd8473] process > organize_output:collect_and... [100%] 1 of 1 ✔
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (47)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [100%] 1 of 1 ✔
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[-        ] process > organize_output:gzip_outfiles  -
+[-        ] process > organize_output:calculate_c... -
+[f6/cd8473] process > organize_output:collect_and... [100%] 1 of 1 ✔
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (48)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [100%] 1 of 1 ✔
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[dc/20eb7b] process > organize_output:gzip_outfil... [  0%] 0 of 1
+[-        ] process > organize_output:calculate_c... -
+[f6/cd8473] process > organize_output:collect_and... [100%] 1 of 1 ✔
+[-        ] process > organize_output:prepare_cle... -
+[-        ] process > organize_output:add_raw_to_... -
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (50)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [100%] 1 of 1 ✔
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[dc/20eb7b] process > organize_output:gzip_outfil... [100%] 1 of 1 ✔
+[21/a353d1] process > organize_output:calculate_c... [  0%] 0 of 1
+[f6/cd8473] process > organize_output:collect_and... [100%] 1 of 1 ✔
+[-        ] process > organize_output:prepare_cle... -
+[3c/336789] process > organize_output:add_raw_to_... [  0%] 0 of 1
+[-        ] process > organize_output:add_details... -
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (51)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [100%] 1 of 1 ✔
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[dc/20eb7b] process > organize_output:gzip_outfil... [100%] 1 of 1 ✔
+[21/a353d1] process > organize_output:calculate_c... [100%] 1 of 1 ✔
+[f6/cd8473] process > organize_output:collect_and... [100%] 1 of 1 ✔
+[-        ] process > organize_output:prepare_cle... -
+[3c/336789] process > organize_output:add_raw_to_... [  0%] 0 of 1
+[90/47014f] process > organize_output:add_details... [  0%] 0 of 1
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (52)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [100%] 1 of 1 ✔
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[dc/20eb7b] process > organize_output:gzip_outfil... [100%] 1 of 1 ✔
+[21/a353d1] process > organize_output:calculate_c... [100%] 1 of 1 ✔
+[f6/cd8473] process > organize_output:collect_and... [100%] 1 of 1 ✔
+[b6/763cbc] process > organize_output:prepare_cle... [  0%] 0 of 1
+[3c/336789] process > organize_output:add_raw_to_... [  0%] 0 of 1
+[90/47014f] process > organize_output:add_details... [  0%] 0 of 1
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (52)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [100%] 1 of 1 ✔
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[dc/20eb7b] process > organize_output:gzip_outfil... [100%] 1 of 1 ✔
+[21/a353d1] process > organize_output:calculate_c... [100%] 1 of 1 ✔
+[f6/cd8473] process > organize_output:collect_and... [100%] 1 of 1 ✔
+[b6/763cbc] process > organize_output:prepare_cle... [  0%] 0 of 1
+[3c/336789] process > organize_output:add_raw_to_... [  0%] 0 of 1
+[90/47014f] process > organize_output:add_details... [100%] 1 of 1 ✔
+[-        ] process > organize_output:add_cleaned... -
+
+executor >  local (53)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [100%] 1 of 1 ✔
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[dc/20eb7b] process > organize_output:gzip_outfil... [100%] 1 of 1 ✔
+[21/a353d1] process > organize_output:calculate_c... [100%] 1 of 1 ✔
+[f6/cd8473] process > organize_output:collect_and... [100%] 1 of 1 ✔
+[b6/763cbc] process > organize_output:prepare_cle... [100%] 1 of 1 ✔
+[3c/336789] process > organize_output:add_raw_to_... [100%] 1 of 1 ✔
+[90/47014f] process > organize_output:add_details... [100%] 1 of 1 ✔
+[ac/beb7dd] process > organize_output:add_cleaned... [  0%] 0 of 1
+
+executor >  local (53)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [100%] 1 of 1 ✔
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[dc/20eb7b] process > organize_output:gzip_outfil... [100%] 1 of 1 ✔
+[21/a353d1] process > organize_output:calculate_c... [100%] 1 of 1 ✔
+[f6/cd8473] process > organize_output:collect_and... [100%] 1 of 1 ✔
+[b6/763cbc] process > organize_output:prepare_cle... [100%] 1 of 1 ✔
+[3c/336789] process > organize_output:add_raw_to_... [100%] 1 of 1 ✔
+[90/47014f] process > organize_output:add_details... [100%] 1 of 1 ✔
+[ac/beb7dd] process > organize_output:add_cleaned... [100%] 1 of 1 ✔
+
+executor >  local (53)
+[07/dc8061] process > calculate_checksum_on_metaf... [100%] 1 of 1 ✔
+[06/0e3d94] process > calculate_checksum_on_sumst... [100%] 1 of 1 ✔
+[1b/96e8a6] process > make_metafile_unix_friendly... [100%] 1 of 1 ✔
+[53/775085] process > check_sumstat_format (1)       [100%] 1 of 1 ✔
+[59/aa32bf] process > add_sorted_rowindex_to_sums... [100%] 1 of 1 ✔
+[de/e1b04f] process > map_to_dbsnp:prepare_dbsnp_... [100%] 1 of 1 ✔
+[d5/e7ea5a] process > map_to_dbsnp:remove_duplica... [100%] 1 of 1 ✔
+[99/f61567] process > map_to_dbsnp:maplift_dbsnp_... [100%] 1 of 1 ✔
+[2b/3eb0e3] process > map_to_dbsnp:is_chrpos_diff... [100%] 1 of 1 ✔
+[ba/ad543b] process > map_to_dbsnp:reformat_chrom... [100%] 2 of 2 ✔
+[82/78d2e0] process > map_to_dbsnp:detect_genome_... [100%] 8 of 8 ✔
+[6e/ed94de] process > map_to_dbsnp:decide_genome_... [100%] 2 of 2 ✔
+[c2/b7acab] process > map_to_dbsnp:build_warning (2) [100%] 2 of 2 ✔
+[65/1e4d2e] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 2 of 2 ✔
+[db/4611a9] process > map_to_dbsnp:maplift_dbsnp_... [100%] 2 of 2 ✔
+[97/92f17b] process > map_to_dbsnp:select_chrpos_... [100%] 1 of 1 ✔
+[0f/eb21ed] process > map_to_dbsnp:rm_dup_chrpos_... [100%] 1 of 1 ✔
+[03/2dd497] process > map_to_dbsnp:reformat_sumst... [100%] 1 of 1 ✔
+[d2/5011cb] process > map_to_dbsnp:split_multiall... [100%] 1 of 1 ✔
+[1b/e2beea] process > allele_correction:allele_co... [100%] 1 of 1 ✔
+[-        ] process > allele_correction:allele_co... -
+[de/8465f1] process > allele_correction:rm_dup_ch... [100%] 1 of 1 ✔
+[cd/2ca974] process > update_stats:numeric_filter... [100%] 1 of 1 ✔
+[b3/a90622] process > update_stats:convert_neglog... [100%] 1 of 1 ✔
+[36/528c6e] process > update_stats:force_eaf (1)     [100%] 1 of 1 ✔
+[71/884b76] process > update_stats:prep_af_stats (1) [100%] 1 of 1 ✔
+[f7/bf8926] process > update_stats:add_af_stats (1)  [100%] 1 of 1 ✔
+[90/2b54aa] process > update_stats:infer_stats (1)   [100%] 2 of 2 ✔
+[a9/dd7159] process > update_stats:merge_inferred... [100%] 1 of 1 ✔
+[95/69d16e] process > update_stats:select_stats_f... [100%] 1 of 1 ✔
+[8d/c56990] process > organize_output:final_assem... [100%] 1 of 1 ✔
+[f4/e6baae] process > organize_output:prep_GRCh37... [100%] 1 of 1 ✔
+[a9/e45dc5] process > organize_output:collect_rmd... [100%] 1 of 1 ✔
+[7a/d07f26] process > organize_output:desc_rmd_li... [100%] 1 of 1 ✔
+[dc/20eb7b] process > organize_output:gzip_outfil... [100%] 1 of 1 ✔
+[21/a353d1] process > organize_output:calculate_c... [100%] 1 of 1 ✔
+[f6/cd8473] process > organize_output:collect_and... [100%] 1 of 1 ✔
+[b6/763cbc] process > organize_output:prepare_cle... [100%] 1 of 1 ✔
+[3c/336789] process > organize_output:add_raw_to_... [100%] 1 of 1 ✔
+[90/47014f] process > organize_output:add_details... [100%] 1 of 1 ✔
+[ac/beb7dd] process > organize_output:add_cleaned... [100%] 1 of 1 ✔
+Completed at: 28-Mar-2022 16:27:32
+Duration    : 18m 48s
+CPU hours   : 1.4
+Succeeded   : 53
+
+
+
+Task and CPU usage stats:
+JobID           JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+14003968_44  FIX_metad+         16                                             00:20:19      0:0 
+14003968_44+      batch         16        1   00:40:35          0   00:40:35   00:20:19      0:0 
+14003968_44+     extern         16        1   00:00:00          0   00:00:00   00:20:19      0:0 
+
+Memory usage stats:
+JobID            MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+14003968_44                                                                      
+14003968_44+       592M          0       592M        0              0          0 
+14003968_44+          0          0          0        0              0          0 
+
+Disk usage stats:
+JobID         MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+14003968_44                                                                                           
+14003968_44+       51.32M               0         51.32M       23.59M                0         23.59M 
+14003968_44+        0.00M               0          0.00M            0                0              0 
+
+Job 14003981 completed at Mon Mar 28 17:27:44 CEST 2022

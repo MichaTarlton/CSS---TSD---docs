@@ -1,0 +1,2 @@
+BROADABC_ASB_2017
+The sumstats folder is /cluster/projects/p697/projects/SUMSTATv2_RAW/BROADABC_ASB_2017/

@@ -1,0 +1,12 @@
+NAMES="$(< /tsd/p697/home/p697-michaejt/p697code/uncleanedlist.txt)"
+for NAME in $NAMES; do
+    echo "$NAME"
+done
+
+sed '${NUM}q;d' /tsd/p697/home/p697-michaejt/p697code/uncleanedlist.txt
+sed "${NUM}q;d" /tsd/p697/home/p697-michaejt/p697code/uncleanedlist.txt
+
+
+
+uncleanedlist=$(sed "${NUM}q;d" /tsd/p697/home/p697-michaejt/p697code/uncleanedlist.txt)
+PATH=$(find . -type f | grep -E ${uncleanedlist}.*cleansumstats_meta)

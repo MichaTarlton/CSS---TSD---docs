@@ -1,0 +1,51 @@
+./cleansumstats.sh \  
+-i /cluster/projects/p697/projects/SUMSTATv2_RAW/PGC_SCZ_2014_EUR/PGC_SCZ_2014_EUR.cleansumstats_meta \  
+-o out_example \  
+-e
+
+./cleansumstats.sh \  
+-i tests/example_data/sumstat_1/sumstat_1_raw_meta.txt \  
+-o out_example \  
+-e
+
+rsync -avP /cluster/projects/p697/projects/SUMSTATv2_RAW/PGC_SCZ_2014_EUR/PGC_SCZ_2014_EUR.cleansumstats_meta 
+
+rsync -avP /cluster/projects/p697/projects/SUMSTATv2_RAW/ /cluster/projects/p697/users/michaejt
+
+
+./cleansumstats/cleansumstats.sh \  
+-i ./PGC_SCZ_2014_EUR/PGC_SCZ_2014_EUR.cleansumstats_meta \  
+-o out_example \  
+-e
+
+cleansumstats/cleansumstats.sh \  
+-i SUMSTATv2_RAW/PGC_SCZ_2014_EUR/PGC_SCZ_2014_EUR.cleansumstats_meta \  
+-o out_example \  
+-e
+
+cleansumstats/cleansumstats.sh \
+-i SUMSTATv2_RAW/PGC_SCZ_2014_EUR/BGC_SCZ_2014_EUR.cleansumstats meta 
+-o out_example \
+-d out dbsnp \
+-k out_1kgp 
+
+cleansumstats/cleansumstats.sh \
+-i SUMSTATv2_RAW/PGC_SCZ_2014_EUR/BGC_SCZ_2014_EUR.cleansumstats meta 
+-o out_example \
+-d out dbsnp \
+-k out_1kgp 
+
+---
+
+Ok so for the part where I need it to list the directory
+
+echo */  ## Lists the directories in folder
+
+echo */ | wc -w ## counts them and returns the number
+
+## So if I set a variable to be the lilst and another variable to count form 1 to end of that list and pass that into the input
+
+## BASH VARIABLES
+SIZE=`echo */ | wc -w` ## THe ` ` set the output of that command to the variable
+
+LIST=`echo */`
