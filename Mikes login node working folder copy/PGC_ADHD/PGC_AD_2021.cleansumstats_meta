@@ -1,0 +1,34 @@
+cleansumstats_metafile_date: '2020-12-31'
+cleansumstats_metafile_user: username
+cleansumstats_version: 1.0.0-alpha
+path_sumStats: PGCALZ2sumstatsExcluding23andMe.pandas.txt.gz
+col_CHR: chr
+col_POS: PosGRCh37
+col_EffectAllele: testedAllele
+col_OtherAllele: otherAllele
+col_Z: z
+col_P: p
+col_N: N
+stats_TotalN: 1
+stats_GCMethod: none
+stats_Model: linear
+stats_Notes: 'dummy description'
+stats_TraitType: quantitative
+stats_neglog10P: false
+study_AccessDate: '2020-12-31'
+study_Ancestry: EUR
+study_Array: meta
+study_FilePortal: http://website.org/dummydata
+study_FileURL: http://website.org/dummydata/file.txt.gz
+study_Gender: mixed
+study_ImputePanel: HapMap
+study_ImputeSoftware: meta
+study_PMID: 666
+study_PhasePanel: meta
+study_PhaseSoftware: meta
+study_PhenoCode:
+- EFO:0000000
+study_PhenoDesc: 'phenotype description'
+study_Title: dummy_title
+study_Use: open
+study_Year: 2020

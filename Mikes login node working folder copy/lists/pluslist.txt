@@ -1,0 +1,7 @@
+./GIANT_BMI_2018_UKB/Meta-analysis_Locke_et_al+UKBiobank_2018.txt.gz
+./GIANT_BMI_2018_UKB/Meta-analysis_Locke_et_al+UKBiobank_2018_UPDATED.txt.gz
+./GIANT_HEIGHT_2018_UKB/Meta-analysis_Wood_et_al+UKBiobank_2018.txt.gz
+./SSGAC_RISK_2019/EVER_SMOKER_GWAS_MA_UKB+TAG.txt.gz
+./SSGAC_RISK_2019/RISK_GWAS_MA_UKB+23andMe+replication.txt.gz
+./SSGAC_RISK_2019/RISK_GWAS_MA_UKB+23andMe.txt.gz
+./SSGAC_RISK_2019/RISK_GWAS_MA_UKB+replication.txt.gz

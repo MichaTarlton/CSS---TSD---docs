@@ -1,0 +1,63 @@
+#!/bin/bash
+#SBATCH --job-name=SUMSTAT
+#SBATCH --account=p697_norment
+#SBATCH --time=4:00:00
+#SBATCH --ntasks=1
+#SBATCH --mem-per-cpu=8000M
+#SBATCH --cpus-per-task=16
+##SBATCH --array=1
+
+## Modified to run a single sumstat out of my sandbox
+
+
+##NUM=$SLURM_ARRAY_TASK_ID
+##echo ${NUM}
+
+##export CLEANSUMSTATS=/tsd/p697/home/p697-michaejt/cleansumstats
+##export CLEANSUMSTATS=/cluster/projects/p697/projects/cleansumstats.jan2022
+
+export CLEANSUMSTATS=/cluster/projects/p697/projects/cleansumstats
+export RAW=/cluster/projects/p697/users/michaejt/SUMSTATv3_RAW
+
+##export OUT=/tsd/p697/home/p697-michaejt/cleansumstats/SUMSTATv2_OUT
+export OUT=/cluster/projects/p697/users/michaejt/SUMSTATv3_OUT
+##export LIST=/tsd/p697/home/p697-michaejt/p697code/uncleanedlist.txt
+
+
+##export uncleanedlist=$(sed "${NUM}q;d" ${LIST})
+##echo ${uncleanedlist}
+##export PLACE=$(find ${RAW} -type f | grep -E ${uncleanedlist}.*cleansumstats_meta)
+export PLACE=GAMEON_COLON_2015_CORECT
+echo ${PLACE}
+
+##export id=$uncleanedlist
+export id=data.tsv
+echo ${id}
+
+
+mkdir ${OUT}/cleansumstats/${id} ## In theory I don\t need this ## for the array test its just in case
+mkdir /tsd/p697/home/p697-michaejt/p697code/scratch/${id}
+
+##cleanup "cp -r $SCRATCH/work /cluster/projects/p697/user/p697-michaejt/scratch/${id}"
+
+
+
+source /cluster/bin/jobsetup
+
+set -o errexit
+
+test $SCRATCH && module load singularity/3.7.1 ## this modification is for slurm only
+
+
+cd ${CLEANSUMSTATS} && ./cleansumstats.sh \
+-i ${RAW}/${PLACE}/${id}.cleansumstats_meta \
+-d /cluster/projects/p697/users/michaejt/cleansumstats/out_dbsnp \
+-k /cluster/projects/p697/users/michaejt/cleansumstats/out_1kgp \
+-o ${OUT}/${id} \
+-w $SCRATCH/work
+
+cp -r $SCRATCH/work /tsd/p697/home/p697-michaejt/p697code/scratch/${id}
+
+
+cd ${OUT}/cleansumstats/${id}/ && paste <(zcat cleaned_GRCh37.gz) <(cut -f 5- <(zcat cleaned_GRCh38.gz) ) | gzip > cleaned_GRCh37.sumstats.gz
+

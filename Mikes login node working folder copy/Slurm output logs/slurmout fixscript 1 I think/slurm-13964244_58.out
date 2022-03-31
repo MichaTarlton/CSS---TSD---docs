@@ -1,0 +1,27 @@
+Starting job 13964692 on c2-3 at Thu Mar 24 16:35:26 CET 2022
+
+58
+iPSYCH_CYTOKINES_2020_VEGF
+
+Task and CPU usage stats:
+JobID           JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+13964244_58     SUMSTAT         16                                             00:00:40      0:0 
+13964244_58+      batch         16        1   00:00:48          0   00:00:48   00:00:40      0:0 
+13964244_58+     extern         16        1                                    00:00:40      0:0 
+
+Memory usage stats:
+JobID            MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+13964244_58                                                                      
+13964244_58+      1576K          0      1576K        0              0          0 
+13964244_58+          0          0          0        0              0          0 
+
+Disk usage stats:
+JobID         MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+13964244_58                                                                                           
+13964244_58+        0.03M               0          0.03M        0.00M                0          0.00M 
+13964244_58+        0.00M               0          0.00M            0                0              0 
+
+Job 13964692 completed at Thu Mar 24 16:36:06 CET 2022

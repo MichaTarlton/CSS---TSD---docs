@@ -1,0 +1,63 @@
+Starting job 13654887 on c2-9 at Mon Feb 21 22:09:23 CET 2022
+
+86
+PGC_ASD_2017_WW
+/cluster/projects/p697/projects/SUMSTATv2_RAW/PGC_ASD_2017/PGC_ASD_2017_WW.cleansumstats_meta
+PGC_ASD_2017_WW
+-------------------------------------------------------------------------------
+There are messages associated with the following module(s):
+-------------------------------------------------------------------------------
+
+singularity/3.7.1:
+   This is a custom module. You can use "module spider <software>" to search
+   for more recent Easybuild modules (those listed under
+   /cluster/software/MODULEFILES/easybuild/all). If no recent Easybuild
+   module is available, you can request it to be installed:
+   https://nettskjema.no/a/usit-sw-request#/page/1
+
+-------------------------------------------------------------------------------
+
+N E X T F L O W  ~  version 21.12.1-edge
+Launching `/cleansumstats/main.nf` [suspicious_brown] - revision: 7c5d3c83f6
+----------------------------------------------------
+                                        ,--./,-.
+                                        `._,._,'
+ cleansumstats v1.3.0
+----------------------------------------------------
+
+Run Name          : suspicious_brown
+Input             : /cleansumstats/input/PGC_ASD_2017_WW.cleansumstats_meta
+Max Resources     : 400 GB memory, 60 cpus, 4h time per job
+Output dir        : /cleansumstats/outdir
+Launch dir        : /cleansumstats/tmp/fake-home
+Working dir       : /cleansumstats/tmp/fake-home/work
+Script dir        : /cleansumstats
+User              : p697-michaejt
+Config Profile    : standard
+----------------------------------------------------
+Reading metadata files
+Postprocess metadata
+Failed to read/validate metadata file /cleansumstats/input/PGC_ASD_2017_WW.cleansumstats_meta: Column 'or' (from metadata field 'col_OR') did not exist in sumstat file header: [1, 729679, rs4951859, C, G, 1.03, 0.96, 1.10, .0288, .036, .4251, .19, .652, 15954, --+-+-++++++-+]
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+13654819_86     SUMSTAT         16                                             00:00:12      1:0 
+13654819_86+      batch         16        1   00:00:26          0   00:00:26   00:00:12      1:0 
+13654819_86+     extern         16        1   00:00:00          0   00:00:00   00:00:12      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+13654819_86                                                                      
+13654819_86+          0          0          0        0              0          0 
+13654819_86+          0          0          0        0              0          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+13654819_86                                                                                           
+13654819_86+            0               0              0            0                0              0 
+13654819_86+        0.00M               0          0.00M            0                0              0 
+
+Job 13654887 completed at Mon Feb 21 22:09:33 CET 2022

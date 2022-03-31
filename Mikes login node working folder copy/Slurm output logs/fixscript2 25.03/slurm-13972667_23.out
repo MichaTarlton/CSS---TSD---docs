@@ -1,0 +1,27 @@
+Starting job 13972672 on c2-3 at Fri Mar 25 16:07:15 CET 2022
+
+23
+BCX_Blood_2020_MCHC_EA
+
+Task and CPU usage stats:
+JobID           JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+13972667_23     SUMSTAT         16                                             00:04:00      0:0 
+13972667_23+      batch         16        1   00:04:58          0   00:04:58   00:04:00      0:0 
+13972667_23+     extern         16        1   00:00:00          0   00:00:00   00:04:00      0:0 
+
+Memory usage stats:
+JobID            MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+13972667_23                                                                      
+13972667_23+      1572K          0      1572K        0              0          0 
+13972667_23+          0          0          0        0              0          0 
+
+Disk usage stats:
+JobID         MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+13972667_23                                                                                           
+13972667_23+        0.03M               0          0.03M        0.00M                0          0.00M 
+13972667_23+        0.00M               0          0.00M            0                0              0 
+
+Job 13972672 completed at Fri Mar 25 16:11:16 CET 2022
